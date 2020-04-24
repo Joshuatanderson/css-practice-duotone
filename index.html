@@ -1,0 +1,60 @@
+<!-- prettier -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body>
+    <div class="grid">
+      <img
+        src="assets/ardito-ryan-harrisna-sC58WOuI7vM-unsplash.jpg"
+        class="img red-filter"
+      /><img
+        src="assets/roman-manukyan-jDEgU0kZlYE-unsplash.jpg"
+        class="img blurple-filter"
+      /><img
+        src="./assets/logan-weaver-q4-P1DPcnIs-unsplash.jpg"
+        class="img green-orange-filter"
+      />
+    </div>
+  </body>
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <filter id="red-filter">
+      <feColorMatrix
+        type="matrix"
+        values="0.39     0     0     0     0
+			  0     0     0     0     0
+			  0     0     0     0     0
+			  0     0     0     .7     0 "
+      />
+    </filter>
+  </svg>
+
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <filter id="blurple-filter">
+      <feColorMatrix
+        type="matrix"
+        values="0.39     0     0     0     0
+			0     0     0     0     0
+			0     0     0.98     0     0
+			0     0     0     .9     0 "
+      />
+    </filter>
+  </svg>
+
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <filter id="green-orange-filter">
+      <feColorMatrix
+        type="matrix"
+        values="0.98     0     0     0     0
+			0     0.39     0     0     0
+			0     0     0     0     0
+			0     0     0     .9     0 "
+      />
+    </filter>
+  </svg>
+</html>
